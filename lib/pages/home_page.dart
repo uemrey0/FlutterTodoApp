@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
       const CompletedListWidget(),
     ];
     return Scaffold(
-      appBar: AppBar(title: const Text(MyApp.title)),
+      appBar: AppBar(title: const Text(MyApp.title), backgroundColor: Theme.of(context).primaryColor,),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.white.withOpacity(0.5),
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        backgroundColor: Colors.black,
+        backgroundColor: Color.fromRGBO(170, 170, 170, 1),
         onPressed: () => showDialog(
           context: context,
           builder: (context) => const AddToDoDialogPage(),

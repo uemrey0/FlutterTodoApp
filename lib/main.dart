@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: title,
           theme: ThemeData(
-            primarySwatch: Colors.pink,
-            scaffoldBackgroundColor: Colors.pink[50]
+            primaryColor: Color.fromRGBO(225, 112, 26, 1),
+            scaffoldBackgroundColor: Color.fromRGBO(236, 236, 236, 1)
           ),
           home: const HomePage(),
         ),
